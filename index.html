@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Hackathon | Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <main class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h2>Lumina <span>Hackathon</span></h2>
+                <p>Join the next generation of UI/UX designers and developers. Secure your spot now.</p>
+            </div>
+            <form id="signup-form">
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Jane Doe" required>
+                    <span class="error-message">Name is required</span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="jane@example.com" required>
+                    <span class="error-message">Please enter a valid email</span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="role">Primary Role</label>
+                    <select id="role" required>
+                        <option value="" disabled selected>Select your expertise</option>
+                        <option value="ui-ux">UI/UX Designer</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="fullstack">Fullstack Developer</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a strong password" required>
+                    <div class="password-strength">
+                        <div class="strength-bar"></div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <span class="btn-text">Secure My Spot</span>
+                    <span class="loader"></span>
+                </button>
+            </form>
+            
+            <div class="success-message" id="success-message">
+                <div class="check-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <h3>You're In!</h3>
+                <p>Keep an eye on your inbox for further details about the hackathon.</p>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <div class="info-content">
+                <h3>Event Details</h3>
+                <div class="detail-item">
+                    <strong>Date:</strong>
+                    <span>October 24-26, 2026</span>
+                </div>
+                <div class="detail-item">
+                    <strong>Location:</strong>
+                    <span>Virtual / Online</span>
+                </div>
+                <div class="detail-item">
+                    <strong>Prize Pool:</strong>
+                    <span>$50,000 USD</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
