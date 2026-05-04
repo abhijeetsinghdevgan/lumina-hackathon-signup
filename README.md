@@ -24,8 +24,15 @@ Welcome to the **Lumina Hackathon Sign-up Form** project! This repository contai
 2. Open `index.html` in your favorite web browser.
 3. No build tools or package managers required!
 
-## 📸 Preview
-*(Add a screenshot or GIF here of your beautiful UI)*
+## 📸 Code Previews
+
+Check out these beautiful code snippets showcasing the core logic and structure:
+
+### Password Strength Meter (JavaScript)
+![JS Password Strength Logic](assets/js-snippet.png)
+
+### Form Structure (HTML)
+![HTML Form Inputs](assets/html-snippet.png)
 
 ---
 Designed and developed with 💜. 
